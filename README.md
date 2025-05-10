@@ -6,7 +6,7 @@ Firmware for the Arduino Opta, designed to simulate a traffic management system.
 
 First, update your configuration in `src/config.h`. Of particular importance is the junction ID (`JUNCTION`) and spoofing/repudiation protections (`NON_REPUDIATION`: 0 is off, 1 is on).
 
-This firmware can either be used as a Physical Twin, or as a Semi-Digital Twin. This is controlled by `SIMULATION`: 0 is the former and 1 is the latter. The Physical Twin operates standalone; for the Semi-Digital Twin, you should ensure the [world state server](broken link) is running first.
+This firmware can either be used as a Physical Twin, or as a Semi-Digital Twin. This is controlled by `SIMULATION`: 0 is the former and 1 is the latter. The Physical Twin operates standalone; for the Semi-Digital Twin, you should ensure the [world state server](https://github.com/j-leeming-uni/scc.300-world_state) is running first.
 
 To compile and upload the code to your Opta board, you can use the `upload` target in the Makefile. You can run this target from the terminal in CLion by running the following command:
 
